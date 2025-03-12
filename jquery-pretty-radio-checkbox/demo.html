@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>jQuery實現美化版的單選框和覈取方塊DEMO演示</title>
+<link rel="stylesheet" href="css/jquery-labelauty.css">
+<style>
+ul { list-style-type: none;}
+li { display: inline-block;}
+li { margin: 10px 0;}
+input.labelauty + label { font: 12px "Microsoft Yahei";}
+</style>
+</head>
+
+<body>
+<center>
+<h1>jQuery單選框跟覈取方塊美化程式碼演示</h1>
+<h3>您的職業（單選框）</h3>
+<ul class="dowebok">
+	<li><input type="radio" name="radio" data-labelauty="視覺設計師"></li>
+	<li><input type="radio" name="radio" data-labelauty="互動設計師"></li>
+	<li><input type="radio" name="radio" data-labelauty="前端工程師"></li>
+	<li><input type="radio" name="radio" data-labelauty="數據分析師"></li>
+	<li><input type="radio" name="radio" disabled data-labelauty="不可用"></li>
+</ul>
+
+<hr>
+
+<h3>您擅長的技能（覈取方塊）</h3>
+<ul class="dowebok">
+	<li><input type="checkbox" name="checkbox" disabled checked data-labelauty="HTML"></li>
+	<li><input type="checkbox" name="checkbox" data-labelauty="CSS"></li>
+	<li><input type="checkbox" name="checkbox" data-labelauty="JavaScript"></li>
+	<li><input type="checkbox" name="checkbox" data-labelauty="SEO"></li>
+	<li><input type="checkbox" name="checkbox" data-labelauty="PHP"></li>
+	<li><input type="checkbox" name="checkbox" data-labelauty="JAVA"></li>
+	<li><input type="checkbox" name="checkbox" data-labelauty=".NET"></li>
+</ul>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-labelauty.js"></script>
+<script>
+$(function(){
+	$(':input').labelauty();
+});
+</script>
+</center>
+
+<div style="text-align:center;clear:both;">
+
+</div>
+</body>
+</html>
